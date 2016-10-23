@@ -5,6 +5,7 @@
 
 'use strict';
 import Thing from '../api/thing/thing.model';
+import SiteDefinition from '../api/siteDefinition/siteDefinition.model';
 
 Thing.find({}).remove()
   .then(() => {
@@ -38,3 +39,90 @@ Thing.find({}).remove()
     });
   });
 
+  SiteDefinition.find({}).remove()
+    .then(() => {
+      SiteDefinition.create({
+        facility: 'St Francis Home',
+        site: '',
+        dateStart: new Date(2000, 1, 3),
+        agency: 'SFH',
+        metro: '',
+        area: '',
+        fyBaseDate: new Date(2000, 1, 1),
+        skillsTable: false,
+        convertWait: 5,
+        lockTime: false,
+        orderRule: false,
+        nextNoteNumber: 4017,
+        nextJobXref: 1,
+        nextJunkNumber: 1,
+        nextResXref: 1,
+        nextRidXref: 1993,
+        nextCusXref: 1,
+        planStart: '',
+        rowsAnHour: 4,
+        hourlyDefault: 0,
+        upRates: 0,
+        rateDate: new Date(2000, 1, 1),
+        rateTime: '',
+        homeCareRate: 0,
+        incentiveType: 'A',
+        defaultIncentive: 'M',
+        designUpdate: new Date(2005, 11, 10, 11, 54, 45),
+        designRecalc: new Date(2005, 12, 15, 11, 58, 32),
+        standardUpdate: new Date(2000, 6, 6, 9, 37, 43),
+        standardRecalc: new Date(2005, 12, 15, 11, 58, 34),
+        costUpdate: '',
+        costRecalc: '',
+        dpp: '14',
+        lptNumber: 'LPT4',
+        printerType: 'HP5',
+        planSaved: true,
+        helpInfo: 'Design Schedules LLC at 608/831-2920',
+        standardShiftMn: 0,
+        axesPay: false,
+        lorosklor: '',
+        lorosklar: '',
+        clockStart: 0,
+        lfChecksum: 17077,
+        appSerial: 2105,
+        runLength: 6,
+        diffByTref: false,
+        siteAddress: '33 Everett Street',
+        siteAddress2: '',
+        siteCity: 'Fond du Lac',
+        siteState: 'WI',
+        sitePhone: '920-923-7980',
+        siteLicense: '',
+        ruleOfMost: 0,
+        standardBreak: 0,
+        standardMeal: 0,
+        fhtrPerPeriod: 80,
+        lastSchk: new Date(2005, 12, 19),
+        diffType: '',
+        klokLink: false,
+        recheckPrinter: true,
+        splitOverlap: 20,
+        wlfxkSum: 102593,
+        bestCount: '12',
+        payrollPackage: '',
+        payrollVersion: '',
+        etUpdateTo: '',
+        etUpdateOn: '',
+        etUpdateAt: '',
+        etUpdateBy: '',
+        stableTables: true,
+        dfChkxHire: 0,
+        dfChkxApmt: 0,
+        inChkxHire: 0,
+        inChkxApmt: 0,
+        careVenue: 'URBAN',
+        i28wPhone: true,
+        shyftymHide: true,
+        offByTrefs: false,
+        standardHide: false
+      })
+      .then(() => {
+        console.log('finished populating site definitions');
+      });
+    });

@@ -1,0 +1,330 @@
+<div class="container">
+  <div class="col-md-12">
+    <h4>Site Definitions</h4>
+    <div ui-grid="gridOptions" class="grid" style="height: 200px"
+      ui-grid-resize-columns ui-grid-selection ui-grid-exporter ui-grid-pinning></div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="strike">
+                <span>Facility</span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <label class="control-label" for="facilityName">Name</label>
+                <input type="text" class="form-control input-sm" id="facilityName" ng-model="newSitedef.facility" placeholder="Enter Facility Name">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="siteTag">Site Tag</label>
+                    <input type="text" class="form-control input-sm" id="siteTag" ng-model="newSitedef.site" placeholder="Enter Site Tag">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="daysPerPeriod">Days per Period</label>
+                    <input type="number" min="0" class="form-control input-sm" id="daysPerPeriod"  placeholder="Enter Days per Period">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="periodsFrom">Periods From</label>
+                    <input type="date" class="form-control input-sm" id="periodsFrom" ng-model="newSitedef.dateStart" >
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="agencyCode">Agency Code</label>
+                    <input type="text" class="form-control input-sm" id="agencyCode" ng-model="newSitedef.agency" placeholder="Enter Agency Code">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="metro">Metro Code</label>
+                    <input type="text" class="form-control input-sm" id="metro" ng-model="newSitedef.metro" placeholder="Enter Metro Code">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="area">Area Code</label>
+                    <input type="number" class="form-control input-sm" id="area" ng-model="newSitedef.area" placeholder="Enter Area Code">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="checkbox">
+                    <label class="control-label">
+                        <input class="control-label" type="checkbox" value="" name="stableTable" ng-model="newSitedef.skillsTable" >                                                                                                                                                                                                                                                                                                                                                                                     Stable Table
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input class="control-label" type="checkbox" value="" name="lockTime" ng-model="newSitedef.lockTime" >                                                                                                                                                                                                                                                                                                                                                                                 Lock Time
+                    </label>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="convertWait">Convert Wait
+                        <br>
+                    </label>
+                    <input type="number" min="0" class="form-control input-sm" id="convertWait" ng-model="newSitedef.convertWait" placeholder="Enter Convert Wait">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+</form>
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="seniorityRule">Seniority Rule</label>
+                    <input type="number" min="0" class="form-control input-sm" id="seniorityRule" ng-model="newSitedef.orderRule" placeholder="Enter Seniority Rule">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="strike">
+            <span>Task Plan</span>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="taskPlanStartTime">Task Plan Start Time</label>
+                    <input type="time" class="form-control input-sm" id="taskPlanStartTime" ng-model="newSitedef.planStart" placeholder="Enter Start Time">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="defaultIncrements">Default Increments (in minutes)</label>
+                    <input type="number" class="form-control input-sm" id="defaultIncrements" ng-model="newSitedef.rowsAnHour" placeholder="Enter Minutes">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="strike">
+            <span>Next Reference Number</span>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="note">Note
+                        <br>
+                    </label>
+                    <input type="number" class="form-control input-sm" id="note" ng-model="newSitedef.nextNoteNumber" placeholder="Enter Note number">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="job">Job
+                        <br>
+                    </label>
+                    <input type="number" class="form-control input-sm" id="job" ng-model="newSitedef.nextJobXref" placeholder="Enter Job number">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="crossRef">Cross Ref
+                        <br>
+                    </label>
+                    <input type="number" class="form-control input-sm" id="crossRef" ng-model="newSitedef.nextJunkNumber" placeholder="Enter Cross Ref">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="resident">Resident
+                        <br>
+                    </label>
+                    <input type="number" class="form-control input-sm" id="resident" ng-model="newSitedef.nextResXref" placeholder="Enter Resident number">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="location">Location
+                        <br>
+                    </label>
+                    <input type="number" class="form-control input-sm" id="location" ng-model="newSitedef.nextRidXref" placeholder="Enter Location number">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="customer">Customer
+</label>
+                    <input type="number" class="form-control input-sm" id="customer" ng-model="newSitedef.nextCusXref" placeholder="Enter Customer number">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="strike">
+            <span>Rates</span>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+</form>
+            <div class="checkbox">
+                <label class="control-label">
+                    <input class="control-label" type="checkbox" value="" ng-model="newSitedef.upRates" name="upRates">                                                         Up Rates
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label crsa-selected" for="onDateAtTime">On Date, At Time
+                        <br>
+                    </label>
+                    <input type="datetime-local" class="form-control input-sm" ng-model="newSitedef.rateDate" id="onDateAtTime">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="homeCare">Home Care
+                        <br>
+                    </label>
+                    <input type="number" step="0.01" class="form-control input-sm" id="homeCare" ng-model="newSitedef.homeCareRate" placeholder="Enter Home Care Rate">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+</div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="differential">Differential
+                        <br>
+                    </label>
+                    <select id="differential" class="form-control input-sm" ng-model="newSitedef.incentiveType" >
+                        <option></option>
+                        <option>M: Multiply</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="incentive">Incentive
+                        <br>
+                    </label>
+                    <select id="incentive" class="form-control input-sm" ng-model="newSitedef.defaultIncentive" >
+                        <option></option>
+                        <option>M: Multiply</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="strike">
+            <span>Updates / Recaculations</span>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="designUpdate">Design Update</label>
+                    <input type="datetime-local" class="form-control input-sm" id="designUpdate" ng-model="newSitedef.designUpdate">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label crsa-selected" for="designRecalculation">Design Recalculation
+                        <br>
+                    </label>
+                    <input type="datetime-local" class="form-control input-sm" id="designRecalculation" ng-model="newSitedef.designRecalc">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label crsa-selected" for="standardUpdate">Standard Update
+                        <br>
+                    </label>
+                    <input type="datetime-local" class="form-control input-sm" id="standardUpdate" ng-model="newSitedef.standardUpdate">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label" for="standardRecalculation">Standard Recalculation</label>
+                    <input type="datetime-local" class="form-control input-sm" id="standardRecalculation" ng-model="newSitedef.standardRecalc">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label crsa-selected" for="costUpdate">Cost Update
+                        <br>
+                    </label>
+                    <input type="datetime-local" class="form-control input-sm" id="costUpdate" ng-model="newSitedef.costUpdate">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <form role="form">
+                <div class="form-group">
+                    <label class="control-label crsa-selected" for="costRecalculation">Cost Recalculation
+                        <br>
+                    </label>
+                    <input type="datetime-local" class="form-control input-sm" id="costRecalculation" ng-model="newSitedef.costRecalc">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+  <button class="btn btn-primary" ng-click="addNewSitedef()"
+    data-toggle="tooltip" data-placement="left" title="Add">Add New</button>
+</div>

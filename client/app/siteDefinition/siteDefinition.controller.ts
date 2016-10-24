@@ -92,19 +92,6 @@ angular.module('csmeancrudApp')
               return input;
             }
           },
-          // if (col.name == 'gender') {
-          //   switch (input) {
-          //     case 1:
-          //       return 'female';
-          //       break;
-          //     case 2:
-          //       return 'male';
-          //       break;
-          //     default:
-          //       return 'unknown';
-          //       break;
-          //   }
-          // }
 
         // exporterFieldCallback: function ( grid, row, col, input ){
         //   var value: String;
@@ -179,6 +166,7 @@ angular.module('csmeancrudApp')
       .error(function(err){
         alert('Error! Update Site Definition failed');
       });
+    };
   },
   controllerAs: 'siteDefinitionCtrl'
 });

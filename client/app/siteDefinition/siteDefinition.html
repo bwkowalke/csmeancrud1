@@ -13,7 +13,7 @@
         <div class="col-md-12">
             <div class="form-group">
                 <label class="control-label" for="facilityName">Name</label>
-                <input type="text" class="form-control input-sm" id="facilityName" ng-model="newSitedef.facility" placeholder="Enter Facility Name">
+                <input type="text" class="form-control input-sm" id="facilityName" ng-model="newSiteDefinition.facility" placeholder="Enter Facility Name">
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="siteTag">Site Tag</label>
-                    <input type="text" class="form-control input-sm" id="siteTag" ng-model="newSitedef.site" placeholder="Enter Site Tag">
+                    <input type="text" class="form-control input-sm" id="siteTag" ng-model="newSiteDefinition.site" placeholder="Enter Site Tag">
                 </div>
             </form>
         </div>
@@ -38,7 +38,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="periodsFrom">Periods From</label>
-                    <input type="date" class="form-control input-sm" id="periodsFrom" ng-model="newSitedef.dateStart" >
+                    <input type="date" class="form-control input-sm" id="periodsFrom" ng-model="newSiteDefinition.dateStart" >
                 </div>
             </form>
         </div>
@@ -48,7 +48,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="agencyCode">Agency Code</label>
-                    <input type="text" class="form-control input-sm" id="agencyCode" ng-model="newSitedef.agency" placeholder="Enter Agency Code">
+                    <input type="text" class="form-control input-sm" id="agencyCode" ng-model="newSiteDefinition.agency" placeholder="Enter Agency Code">
                 </div>
             </form>
         </div>
@@ -56,7 +56,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="metro">Metro Code</label>
-                    <input type="text" class="form-control input-sm" id="metro" ng-model="newSitedef.metro" placeholder="Enter Metro Code">
+                    <input type="text" class="form-control input-sm" id="metro" ng-model="newSiteDefinition.metro" placeholder="Enter Metro Code">
                 </div>
             </form>
         </div>
@@ -64,7 +64,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="area">Area Code</label>
-                    <input type="number" class="form-control input-sm" id="area" ng-model="newSitedef.area" placeholder="Enter Area Code">
+                    <input type="number" class="form-control input-sm" id="area" ng-model="newSiteDefinition.area" placeholder="Enter Area Code">
                 </div>
             </form>
         </div>
@@ -74,12 +74,12 @@
             <form role="form">
                 <div class="checkbox">
                     <label class="control-label">
-                        <input class="control-label" type="checkbox" value="" name="stableTable" ng-model="newSitedef.skillsTable" >                                                                                                                                                                                                                                                                                                                                                                                     Stable Table
+                        <input class="control-label" type="checkbox" value="" name="stableTable" ng-model="newSiteDefinition.skillsTable" >                                                                                                                                                                                                                                                                                                                                                                                     Stable Table
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
-                        <input class="control-label" type="checkbox" value="" name="lockTime" ng-model="newSitedef.lockTime" >                                                                                                                                                                                                                                                                                                                                                                                 Lock Time
+                        <input class="control-label" type="checkbox" value="" name="lockTime" ng-model="newSiteDefinition.lockTime" >                                                                                                                                                                                                                                                                                                                                                                                 Lock Time
                     </label>
                 </div>
             </form>
@@ -90,7 +90,7 @@
                     <label class="control-label" for="convertWait">Convert Wait
                         <br>
                     </label>
-                    <input type="number" min="0" class="form-control input-sm" id="convertWait" ng-model="newSitedef.convertWait" placeholder="Enter Convert Wait">
+                    <input type="number" min="0" class="form-control input-sm" id="convertWait" ng-model="newSiteDefinition.convertWait" placeholder="Enter Convert Wait">
                 </div>
             </form>
         </div>
@@ -100,7 +100,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="seniorityRule">Seniority Rule</label>
-                    <input type="number" min="0" class="form-control input-sm" id="seniorityRule" ng-model="newSitedef.orderRule" placeholder="Enter Seniority Rule">
+                    <input type="number" min="0" class="form-control input-sm" id="seniorityRule" ng-model="newSiteDefinition.orderRule" placeholder="Enter Seniority Rule">
                 </div>
             </form>
         </div>
@@ -113,7 +113,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="taskPlanStartTime">Task Plan Start Time</label>
-                    <input type="time" class="form-control input-sm" id="taskPlanStartTime" ng-model="newSitedef.planStart" placeholder="Enter Start Time">
+                    <input type="time" class="form-control input-sm" id="taskPlanStartTime" ng-model="newSiteDefinition.planStart" placeholder="Enter Start Time">
                 </div>
             </form>
         </div>
@@ -121,7 +121,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="defaultIncrements">Default Increments (in minutes)</label>
-                    <input type="number" class="form-control input-sm" id="defaultIncrements" ng-model="newSitedef.rowsAnHour" placeholder="Enter Minutes">
+                    <input type="number" class="form-control input-sm" id="defaultIncrements" ng-model="newSiteDefinition.rowsAnHour" placeholder="Enter Minutes">
                 </div>
             </form>
         </div>
@@ -136,7 +136,7 @@
                     <label class="control-label" for="note">Note
                         <br>
                     </label>
-                    <input type="number" class="form-control input-sm" id="note" ng-model="newSitedef.nextNoteNumber" placeholder="Enter Note number">
+                    <input type="number" class="form-control input-sm" id="note" ng-model="newSiteDefinition.nextNoteNumber" placeholder="Enter Note number">
                 </div>
             </form>
         </div>
@@ -146,7 +146,7 @@
                     <label class="control-label" for="job">Job
                         <br>
                     </label>
-                    <input type="number" class="form-control input-sm" id="job" ng-model="newSitedef.nextJobXref" placeholder="Enter Job number">
+                    <input type="number" class="form-control input-sm" id="job" ng-model="newSiteDefinition.nextJobXref" placeholder="Enter Job number">
                 </div>
             </form>
         </div>
@@ -156,7 +156,7 @@
                     <label class="control-label" for="crossRef">Cross Ref
                         <br>
                     </label>
-                    <input type="number" class="form-control input-sm" id="crossRef" ng-model="newSitedef.nextJunkNumber" placeholder="Enter Cross Ref">
+                    <input type="number" class="form-control input-sm" id="crossRef" ng-model="newSiteDefinition.nextJunkNumber" placeholder="Enter Cross Ref">
                 </div>
             </form>
         </div>
@@ -168,7 +168,7 @@
                     <label class="control-label" for="resident">Resident
                         <br>
                     </label>
-                    <input type="number" class="form-control input-sm" id="resident" ng-model="newSitedef.nextResXref" placeholder="Enter Resident number">
+                    <input type="number" class="form-control input-sm" id="resident" ng-model="newSiteDefinition.nextResXref" placeholder="Enter Resident number">
                 </div>
             </form>
         </div>
@@ -178,7 +178,7 @@
                     <label class="control-label" for="location">Location
                         <br>
                     </label>
-                    <input type="number" class="form-control input-sm" id="location" ng-model="newSitedef.nextRidXref" placeholder="Enter Location number">
+                    <input type="number" class="form-control input-sm" id="location" ng-model="newSiteDefinition.nextRidXref" placeholder="Enter Location number">
                 </div>
             </form>
         </div>
@@ -187,7 +187,7 @@
                 <div class="form-group">
                     <label class="control-label" for="customer">Customer
 </label>
-                    <input type="number" class="form-control input-sm" id="customer" ng-model="newSitedef.nextCusXref" placeholder="Enter Customer number">
+                    <input type="number" class="form-control input-sm" id="customer" ng-model="newSiteDefinition.nextCusXref" placeholder="Enter Customer number">
                 </div>
             </form>
         </div>
@@ -201,7 +201,7 @@
 </form>
             <div class="checkbox">
                 <label class="control-label">
-                    <input class="control-label" type="checkbox" value="" ng-model="newSitedef.upRates" name="upRates">                                                         Up Rates
+                    <input class="control-label" type="checkbox" value="" ng-model="newSiteDefinition.upRates" name="upRates">                                                         Up Rates
                 </label>
             </div>
         </div>
@@ -211,7 +211,7 @@
                     <label class="control-label crsa-selected" for="onDateAtTime">On Date, At Time
                         <br>
                     </label>
-                    <input type="datetime-local" class="form-control input-sm" ng-model="newSitedef.rateDate" id="onDateAtTime">
+                    <input type="datetime-local" class="form-control input-sm" ng-model="newSiteDefinition.rateDate" id="onDateAtTime">
                 </div>
             </form>
         </div>
@@ -221,7 +221,7 @@
                     <label class="control-label" for="homeCare">Home Care
                         <br>
                     </label>
-                    <input type="number" step="0.01" class="form-control input-sm" id="homeCare" ng-model="newSitedef.homeCareRate" placeholder="Enter Home Care Rate">
+                    <input type="number" step="0.01" class="form-control input-sm" id="homeCare" ng-model="newSiteDefinition.homeCareRate" placeholder="Enter Home Care Rate">
                 </div>
             </form>
         </div>
@@ -235,7 +235,7 @@
                     <label class="control-label" for="differential">Differential
                         <br>
                     </label>
-                    <select id="differential" class="form-control input-sm" ng-model="newSitedef.incentiveType" >
+                    <select id="differential" class="form-control input-sm" ng-model="newSiteDefinition.incentiveType" >
                         <option></option>
                         <option>M: Multiply</option>
                         <option>2</option>
@@ -250,7 +250,7 @@
                     <label class="control-label" for="incentive">Incentive
                         <br>
                     </label>
-                    <select id="incentive" class="form-control input-sm" ng-model="newSitedef.defaultIncentive" >
+                    <select id="incentive" class="form-control input-sm" ng-model="newSiteDefinition.defaultIncentive" >
                         <option></option>
                         <option>M: Multiply</option>
                         <option>2</option>
@@ -268,7 +268,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="designUpdate">Design Update</label>
-                    <input type="datetime-local" class="form-control input-sm" id="designUpdate" ng-model="newSitedef.designUpdate">
+                    <input type="datetime-local" class="form-control input-sm" id="designUpdate" ng-model="newSiteDefinition.designUpdate">
                 </div>
             </form>
         </div>
@@ -278,7 +278,7 @@
                     <label class="control-label crsa-selected" for="designRecalculation">Design Recalculation
                         <br>
                     </label>
-                    <input type="datetime-local" class="form-control input-sm" id="designRecalculation" ng-model="newSitedef.designRecalc">
+                    <input type="datetime-local" class="form-control input-sm" id="designRecalculation" ng-model="newSiteDefinition.designRecalc">
                 </div>
             </form>
         </div>
@@ -288,7 +288,7 @@
                     <label class="control-label crsa-selected" for="standardUpdate">Standard Update
                         <br>
                     </label>
-                    <input type="datetime-local" class="form-control input-sm" id="standardUpdate" ng-model="newSitedef.standardUpdate">
+                    <input type="datetime-local" class="form-control input-sm" id="standardUpdate" ng-model="newSiteDefinition.standardUpdate">
                 </div>
             </form>
         </div>
@@ -298,7 +298,7 @@
             <form role="form">
                 <div class="form-group">
                     <label class="control-label" for="standardRecalculation">Standard Recalculation</label>
-                    <input type="datetime-local" class="form-control input-sm" id="standardRecalculation" ng-model="newSitedef.standardRecalc">
+                    <input type="datetime-local" class="form-control input-sm" id="standardRecalculation" ng-model="newSiteDefinition.standardRecalc">
                 </div>
             </form>
         </div>
@@ -308,7 +308,7 @@
                     <label class="control-label crsa-selected" for="costUpdate">Cost Update
                         <br>
                     </label>
-                    <input type="datetime-local" class="form-control input-sm" id="costUpdate" ng-model="newSitedef.costUpdate">
+                    <input type="datetime-local" class="form-control input-sm" id="costUpdate" ng-model="newSiteDefinition.costUpdate">
                 </div>
             </form>
         </div>
@@ -318,13 +318,13 @@
                     <label class="control-label crsa-selected" for="costRecalculation">Cost Recalculation
                         <br>
                     </label>
-                    <input type="datetime-local" class="form-control input-sm" id="costRecalculation" ng-model="newSitedef.costRecalc">
+                    <input type="datetime-local" class="form-control input-sm" id="costRecalculation" ng-model="newSiteDefinition.costRecalc">
                 </div>
             </form>
         </div>
     </div>
 </div>
 <div class="col-md-4">
-  <button class="btn btn-primary" ng-click="addNewSitedef()"
+  <button class="btn btn-primary" ng-click="addNewSiteDefinition()"
     data-toggle="tooltip" data-placement="left" title="Add">Add New</button>
 </div>

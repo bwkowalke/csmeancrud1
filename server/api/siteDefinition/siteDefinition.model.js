@@ -3,6 +3,7 @@
 import mongoose from 'mongoose';
 
 var SiteDefinitionSchema = new mongoose.Schema({
+  // _id: String,
   facility: String,
   site: String,
   dateStart: Date,
